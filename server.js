@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
@@ -17,10 +18,14 @@ app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.use("/", routes);
 app.use("/api/data", routes);
+app.use("/api/users", routes);
 
 mongoose.connect(
-  "mongodb+srv://admin:admin@challenge-me.nalk9.mongodb.net/challenge-me?retryWrites=true&w=majority",
-  { useNewUrlParser: true }
+  process.env.DB_CONNECTION,
+  { useNewUrlParser: true },
+  { useUnifiedTopology: true }
 );
+
+mongoose.connection.once("open", () => console.log("Connection approved"));
 
 module.exports = app;
