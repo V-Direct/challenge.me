@@ -1,19 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const UserModel = require("../models/User");
+const UserService = require("../services/UserService")
 
 // GET all Users
 router.get("/user", (req, res) => {
-  UserModel.find()
-    .then((users) => res.json(users))
-    .catch((err) => res.status(400).json("Error: " + err));
+  UserService.findAll(res);
 });
 
 //GET one User
 router.get("/user/:username", (req, res) => {
-  UserModel.find()
-    .then((users) => res.json(users))
-    .catch((err) => res.status(400).json("Error: " + err));
+  UserService.findOne(req.params.username, res);
 });
 
 //POST add User
@@ -23,7 +19,7 @@ router.post("/user", async (req, res) => {
   try {
     await users.save();
   } catch (error) {
-    res.status(500).send(err);
+    res.status(500).send(error);
   }
 });
 
