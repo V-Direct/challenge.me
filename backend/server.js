@@ -6,6 +6,7 @@ const logger = require("morgan");
 
 const routes = require("./routes/index");
 const userroutes = require("./routes/UserRoutes");
+const challengeroutes = require("./routes/ChallengeRoutes");
 const app = express();
 
 const mongoose = require("mongoose");
@@ -18,6 +19,7 @@ app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.use("/", routes);
 app.use("/", userroutes);
+app.use("/", challengeroutes);
 
 mongoose.connect(
   process.env.DB_CONNECTION,
