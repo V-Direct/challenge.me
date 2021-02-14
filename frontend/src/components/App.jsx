@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/App.css";
-import NavBar from "./NavBar";
-import Register from "./Register"
+import NavBar from "./NavBar/NavBar";
+
 
 function App() {
   return (

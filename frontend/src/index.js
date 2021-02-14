@@ -1,7 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./components/App";
-import Register from "./components/Register";
+import Contact from "./components/pages/Contact"
 
-ReactDOM.render(<Register />, document.getElementById("root"));
+const Routing = () => {
+    return(
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={App}/>
+                <Route path="/contact" component={Contact} />
+            </Switch>
+        </BrowserRouter>
+    )
+}
+
+ReactDOM.render((
+    <BrowserRouter>
+        <Routing />
+    </BrowserRouter>
+), document.getElementById("root"));
+
