@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function NavBarItem(props) {
   return (
     <div>
-      <button ><Link to="/contact">{props.content}</Link></button>
+      <button ><Link to={"/"+props.content.toLowerCase()}>{props.content}</Link></button>
     </div>
   );
 }

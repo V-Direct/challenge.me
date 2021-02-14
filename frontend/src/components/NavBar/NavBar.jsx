@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="navitem">
       <NavBarItem content="Home" />
       <NavBarItem content="Contact" />
-      <NavBarItem content="Notifications" />
+      <NavBarItem content="Register" />
     </nav>
   );
 }
