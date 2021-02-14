@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 import App from "./components/App";
 import Contact from "./components/pages/Contact"
 
@@ -21,3 +20,4 @@ ReactDOM.render((
         <Routing />
     </BrowserRouter>
 ), document.getElementById("root"));
+
