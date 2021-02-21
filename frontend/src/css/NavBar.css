@@ -1,3 +1,11 @@
 .navitem {
-  display: flex;
+  margin: 0px 5px 0px 0px;
+
+  display: inline-block;
+}
+
+.nav {
+  width: 100%;
+  border: black solid 2px;
+  background-color: rgba(8, 72, 168, 0.658);
 }

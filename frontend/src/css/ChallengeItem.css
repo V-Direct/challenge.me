@@ -1,14 +1,44 @@
 .challange-container {
+  margin: 5% 5% 5% 5%;
+  border: rgb(1, 113, 189) solid 2px;
+  display: block;
+  padding: 0.75%;
+  width: 30%;
+  background-color: rgba(8, 72, 168, 0.658);
+  color: white;
+}
+
+.challenge-header {
+  border: black solid 2px;
+  display: flexbox;
+  margin-bottom: 2.5%;
+  width: fit-content;
 }
 
 .challenge-title {
+  display: inline;
+  font-size: 35px;
 }
 
 .challenge-tag {
+  display: inline;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .challenge-description {
+  font-size: 20px;
 }
 
 .labels-container {
+  margin-top: 15px;
+}
+
+.label {
+  display: inline;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 3px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 6px;
 }
