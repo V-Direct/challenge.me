@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function ChallengeItemHeader(props) {
-    return (
-        <div>
-            <div className="challenge-title">{props.title}</div>
-            <div className="challenge-tag">{props.tag}</div>
-        </div>
-    )
+export default function ChallengeItemHeader({ title, tag }) {
+  return (
+    <div className="challenge-header">
+      <div className="challenge-title">{title}</div>
+      <div className="challenge-tag">{tag}</div>
+    </div>
+  );
+
 }
