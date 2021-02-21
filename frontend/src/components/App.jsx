@@ -22,7 +22,7 @@ class App extends React.Component{
   }
 
   render(){
-    const {data} = this.state
+    const {data} = this.state;
     return (
       <div className="app">
         <NavBar />
@@ -36,7 +36,11 @@ class App extends React.Component{
             labels={item.labels}
           />
         ))}
+      </div>
+    )
+  }
 }
+
 
 export default App;
 

@@ -11,6 +11,7 @@ function NavBar() {
         <NavBarItem content="Home" link=""/>
         <NavBarItem content="Contact" link="contact"/>
         <NavBarItem content="Register" link="register"/>
+        <NavBarItem content="Login" link="login" />
       </div>
     </nav>
   );
