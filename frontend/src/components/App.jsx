@@ -3,6 +3,7 @@ import "../css/App.css";
 import NavBar from "./NavBar/NavBar";
 import ChallengeItem from "./ChallengeItem/ChallengeItem";
 
+
 class App extends React.Component{
   constructor(){
     super()
@@ -35,10 +36,6 @@ class App extends React.Component{
             labels={item.labels}
           />
         ))}
-    </div>
-    )
-  }
-  
 }
 
 export default App;

@@ -7,4 +7,5 @@ export default function ChallengeItemHeader({ title, tag }) {
       <div className="challenge-tag">{tag}</div>
     </div>
   );
+
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import NavBarItem from "./NavBarItem";
 import "../../css/NavBar.css";
+
 import "materialize-css"
 
 function NavBar() {
