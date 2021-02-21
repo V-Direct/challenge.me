@@ -1,7 +1,7 @@
 import React from "react";
 
    async function createUser(newUsername, newPassword){
-        const response= await fetch('http://localhost:3000/user/',{
+        const response= await fetch('http://localhost:3001/user',{
             method: 'POST',
             headers: { 
                 'Accept' : 'application/json',
