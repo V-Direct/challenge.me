@@ -1,13 +1,13 @@
 import React from "react";
 import NavBarItem from "./NavBarItem";
-import "../../css/NavBar/NavBar.css";
+import "../../css/NavBar.css";
 
 function NavBar() {
   return (
     <nav className="navitem">
       <NavBarItem content="Home" />
       <NavBarItem content="Contact" />
-      <NavBarItem content="Notifications" />
+      <NavBarItem content="Register" />
     </nav>
   );
 }
