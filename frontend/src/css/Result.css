@@ -8,11 +8,12 @@ body {
   justify-content: center, space-evenly;
   margin-top: 5%;
   flex-direction: column;
+  font-family: bahnschrift;
 }
 
 .title {
+  font-weight: bolder;
   color: blueviolet;
-  font-family: bahnschrift;
   font-size: 24pt;
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Result.css";
 
+
 const data = 
 {Place: 500,
 
