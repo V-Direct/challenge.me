@@ -1,10 +1,11 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import "../../css/NavBar.css";
 
-function NavBarItem(props) {
+function NavBarItem({link, content}) {
   return (
-    <div>
-      <button ><Link to="/contact">{props.content}</Link></button>
+    <div className="navitem">
+      <div><Link to={"/"+link}>{content}</Link></div>
     </div>
   );
 }

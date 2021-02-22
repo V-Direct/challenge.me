@@ -1,0 +1,30 @@
+body {
+  background-color: cornsilk;
+}
+
+.resultDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center, space-evenly;
+  margin-top: 5%;
+  flex-direction: column;
+  font-family: bahnschrift;
+}
+
+.title {
+  font-weight: bolder;
+  color: blueviolet;
+  font-size: 24pt;
+}
+
+.tableResult {
+  margin-top: 5%;
+  font-size: 14pt;
+}
+
+.tableItems {
+  margin-top: 15%;
+  font-size: 20pt;
+  color: blueviolet;
+  font-weight: bolder;
+}

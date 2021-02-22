@@ -1,9 +1,9 @@
 {
   "name": "backend",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "client": "cd ../frontend && npm run build && npm run start",
+    "client": "cd ../frontend && npm run start",
     "server": "nodemon bin/www",
     "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
   },
