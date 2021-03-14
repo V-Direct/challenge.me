@@ -1,6 +1,6 @@
 import React from "react";
 import ChallengeItemHeader from "./ChallengeItemHeader";
-import '../../css/ChallengeItem.css';
+import "../../css/ChallengeItem.css";
 
 export default function ChallengeItem({
   title,
@@ -9,16 +9,26 @@ export default function ChallengeItem({
   labels,
   creator,
 }) {
+
   return (
-    <div className="challange-container">
-      <ChallengeItemHeader title={title} tag={tag} />
-      <div className="challenge-description">{description}</div>
-      <div className="labels-container">
-        {labels.map((label) => (
-          <div key={labels.indexOf(label)} className="label">{label}</div>
-        ))}
+      <div className="row">
+        <div className="col s4">
+          <div className="card challenge-container blue darken-3">
+            <div className="card-content">
+              <ChallengeItemHeader title={title} tag={tag} />
+              <div className="challenge-description">{description}</div>
+              <div className="labels-container">
+                {labels.map((label) => (
+                  <div key={labels.indexOf(label)} className="label">
+                    {label}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   );
 }
+
 

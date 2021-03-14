@@ -1,33 +1,30 @@
 import React from "react";
 import "../css/App.css";
-import NavBar from "./NavBar/NavBar";
 import ChallengeItem from "./ChallengeItem/ChallengeItem";
 
-
-class App extends React.Component{
-  constructor(){
-    super()
+class App extends React.Component {
+  constructor() {
+    super();
     this.state = {
-      data: []
-    }
-  }
-    
-  componentDidMount(){
-      fetch("http://localhost:3001/challenge/")
-        .then((res) => res.json())
-        .then((challenge) => {
-          this.setState({data: challenge});
-          console.log(this.state);
-        });
+      data: [],
+    };
   }
 
-  render(){
-    const {data} = this.state;
+  componentDidMount() {
+    fetch("http://localhost:3001/challenge/")
+      .then((res) => res.json())
+      .then((challenge) => {
+        this.setState({ data: challenge });
+        console.log(this.state);
+      });
+  }
+
+  render() {
+    const { data } = this.state;
     return (
-      <div className="app">
-        <NavBar />
-        {data.map(item => (
-          <ChallengeItem 
+      <div className="container">
+        {data.map((item) => (
+          <ChallengeItem
             key={item._id}
             title={item.title}
             tag={item.tag}
@@ -37,10 +34,9 @@ class App extends React.Component{
           />
         ))}
       </div>
-    )
+    );
   }
 }
-
 
 export default App;
 
