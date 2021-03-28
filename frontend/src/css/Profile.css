@@ -1,0 +1,24 @@
+.Profile {
+  border-radius: 15px;
+  background-color: cornflowerblue;
+  color: white;
+  height: fit-content;
+  display: flexbox;
+  flex-direction: column;
+}
+
+.SettingsButton {
+  margin: 20px;
+  background-color: rgba(8, 72, 168, 0.658);
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 150px;
+}
+
+.UserLogo {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
