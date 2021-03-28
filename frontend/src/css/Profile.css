@@ -1,6 +1,7 @@
 .Profile {
+  margin: 20px;
   border-radius: 15px;
-  background-color: cornflowerblue;
+  background-color: rgba(8, 72, 168, 0.658);
   color: white;
   height: fit-content;
   display: flexbox;
@@ -17,8 +18,16 @@
   width: 150px;
 }
 
+.ChangeImg {
+  background-color: rgba(8, 72, 168, 0.658);
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+}
+
 .UserLogo {
-  margin: 10px;
+  margin-left: 45px;
+  margin-top: 15px;
   height: 100px;
   width: 100px;
 }

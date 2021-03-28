@@ -4,6 +4,7 @@ import "../../css/Profile.css"
 import logo from "../../images/user.svg"
 
 export default function Profile({
+    
 }) {
     return(
         <div className="Profile">
@@ -11,10 +12,10 @@ export default function Profile({
             <img className="UserLogo" alt="profile" src={logo}></img>
             </div>
             <div>
-            <Button className="SettingsButton" buttonText="Settings"></Button>
+            <Button className="SettingsButton" buttonText="Profile"></Button>
             </div>
             <div>
-            <Button className="SettingsButton" buttonText="Settings"></Button>
+            <Button className="SettingsButton" buttonText="Challenges"></Button>
             </div>
             <div>
             <Button className="SettingsButton" buttonText="Settings"></Button>
