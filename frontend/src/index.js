@@ -6,6 +6,7 @@ import Contact from "./components/pages/Contact";
 import Register from "./components/pages/Register";
 import Login from "./components/pages/Login";
 import NavBar from "./components/NavBar/NavBar";
+import Button from "./components/Button/Button";
 
 const Routing = () => {
   return (
@@ -16,6 +17,7 @@ const Routing = () => {
         <Route path="/contact" component={Contact} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
+        <Route path="/button" component={Button}/>
       </Switch>
     </BrowserRouter>
   );
