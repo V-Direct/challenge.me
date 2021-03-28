@@ -2,16 +2,36 @@ import React from "react";
 import NavBarItem from "./NavBarItem";
 import "../../css/NavBar.css";
 
-import "materialize-css"
-
 function NavBar() {
+  const renderRightSide = () => {
+    if (1 === 3) {
+      return (
+        <ul className="right">
+          <NavBarItem
+            content={localStorage.getItem("username")}
+            link="account"
+          />
+          <NavBarItem content="Logout" link="" />
+        </ul>
+      );
+    } else {
+      return (
+        <ul className="right">
+          <NavBarItem content="Register" link="register" />
+          <NavBarItem content="Login" link="login" />
+        </ul>
+      );
+    }
+  };
+
   return (
     <nav className="">
       <div className="nav-wrapper blue darken-3">
-        <NavBarItem content="Home" link=""/>
-        <NavBarItem content="Contact" link="contact"/>
-        <NavBarItem content="Register" link="register"/>
-        <NavBarItem content="Login" link="login" />
+        <ul className="left">
+          <NavBarItem content="Home" link="" />
+          <NavBarItem content="Contact" link="contact" />
+        </ul>
+        {renderRightSide()}
       </div>
     </nav>
   );

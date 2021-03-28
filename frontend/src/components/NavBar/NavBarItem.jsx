@@ -4,9 +4,11 @@ import "../../css/NavBar.css";
 
 function NavBarItem({link, content}) {
   return (
-    <div className="navitem">
-      <div><Link to={"/"+link}>{content}</Link></div>
-    </div>
+    <li>
+      <div className="navitem">
+        <div><Link to={"/"+link}>{content}</Link></div>
+      </div>
+    </li>
   );
 }
 
