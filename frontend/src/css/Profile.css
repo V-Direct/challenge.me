@@ -1,8 +1,9 @@
 .Profile {
+  position: fixed;
   text-align: center;
-  margin: 5%;
+  margin: 2%;
   border-radius: 15px;
-  background-color: rgba(8, 72, 168, 0.658);
+  background-color: rgb(1, 113, 189);
   color: white;
   height: fit-content;
   display: flexbox;
@@ -10,40 +11,40 @@
 }
 
 .SettingsButton {
-  margin-top:5%;
-  margin-bottom:5%;
-  font-size:12pt;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 12pt;
   text-align: center;
-  background-color: rgba(8, 72, 168, 0.658);
+  background-color: rgb(1, 113, 189);
   color: white;
   border-style: none;
   border-radius: 8px;
   width: 90%;
 }
 .UserLogo {
-  margin-top:10%;
+  margin-top: 10%;
   height: 50%;
   width: 50%;
 }
 
-.LabelMarg{
-  margin-top:15%;
-  margin-bottom:5%;
+.LabelMarg {
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 
-.ProfLabel{
-  font-size:20pt;
-  font-weight: 500;
-  margin-bottom:100px;
+.ProfLabel {
+  font-size: 20pt;
+  font-weight: 700;
+  margin-bottom: 100px;
   color: white;
 }
 
-.NameLabel{
-  font-size:20pt;
-  font-weight: 500;
-  color:black;
-  border-bottom:solid;
-  border-color:rgb(182, 195, 215);
+.NameLabel {
+  font-size: 20pt;
+  font-weight: 700;
+  color: black;
+  border-bottom: solid;
+  border-color: rgb(182, 195, 215);
 }
 
 @media screen and (max-width: 601px) {
@@ -51,8 +52,8 @@
     font-size: 12pt;
   }
 
-  .ProfLabel{
-    font-size:12pt;
+  .ProfLabel {
+    font-size: 12pt;
   }
 }
 
@@ -61,7 +62,7 @@
     font-size: 9pt;
   }
 
-  .ProfLabel{
+  .ProfLabel {
     font-size: 9pt;
   }
 }

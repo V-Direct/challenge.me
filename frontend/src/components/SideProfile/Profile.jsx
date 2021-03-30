@@ -28,6 +28,7 @@ export default function Profile({
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="Profile" link="login"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="Settings" link="login"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="More" link="contact"></ProfileLabel>
+            <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="Logout"></ProfileLabel>
         </div>
     )
 }
