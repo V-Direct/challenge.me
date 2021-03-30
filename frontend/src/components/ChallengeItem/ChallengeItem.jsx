@@ -13,7 +13,7 @@ export default function ChallengeItem({
   return (
       <div className="row">
   
-          <div className="card challenge-container blue darken-3">
+          <div className="card challenge-container grey darken-3">
             <div className="card-content">
               <ChallengeItemHeader title={title} tag={tag} />
               <div className="challenge-description">{description}</div>

@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="row">
-          <div className="col s3" style={{background: "red"}}>zeljko</div>
+          <div className="col s3"></div>
           <div className="col s6">
             {data.map(item => (
               <ChallengeItem 
@@ -36,7 +36,7 @@ class App extends React.Component {
               creator={item.creator}
               labels={item.labels}
             />
-        ))}<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+        ))}</div>
           <div className="col s3">
           <Profile />
           </div>

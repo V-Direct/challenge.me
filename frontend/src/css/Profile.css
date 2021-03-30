@@ -3,7 +3,7 @@
   text-align: center;
   margin: 2%;
   border-radius: 15px;
-  background-color: rgb(1, 113, 189);
+  background-color: #c62828;
   color: white;
   height: fit-content;
   display: flexbox;
@@ -15,8 +15,8 @@
   margin-bottom: 5%;
   font-size: 12pt;
   text-align: center;
-  background-color: rgb(1, 113, 189);
-  color: white;
+  background-color: #c62828;
+  color: black;
   border-style: none;
   border-radius: 8px;
   width: 90%;
@@ -42,7 +42,7 @@
 .NameLabel {
   font-size: 20pt;
   font-weight: 700;
-  color: black;
+  color: rgb(33, 33, 33);
   border-bottom: solid;
   border-color: rgb(182, 195, 215);
 }

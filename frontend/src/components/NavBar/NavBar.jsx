@@ -26,7 +26,7 @@ function NavBar() {
 
   return (
     <nav className="">
-      <div className="nav-wrapper blue darken-3">
+      <div className="nav-wrapper">
         <ul className="left">
           <NavBarItem content="Home" link="" />
           <NavBarItem content="Contact" link="contact" />
