@@ -26,7 +26,7 @@ class App extends React.Component {
       <div className="app">
         <div className="row">
           <div className="col s3" style={{background: "red"}}>zeljko</div>
-          <div className="col s6" style={{background: "yellow", display: "flex",  flexDirection: "column", justifyContent: "right"}}>
+          <div className="col s6">
             {data.map(item => (
               <ChallengeItem 
               key={item._id}

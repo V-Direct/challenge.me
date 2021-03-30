@@ -17,13 +17,7 @@ export default function ChallengeItem({
             <div className="card-content">
               <ChallengeItemHeader title={title} tag={tag} />
               <div className="challenge-description">{description}</div>
-              <div className="labels-container">
-                {labels.map((label) => (
-                  <div key={labels.indexOf(label)} className="label">
-                    {label}
-                  </div>
-                ))}
-              </div>
+              
             </div>
  
         </div>
@@ -32,3 +26,12 @@ export default function ChallengeItem({
 }
 
 
+/*
+<div className="labels-container">
+                {labels.map((label) => (
+                  <div key={labels.indexOf(label)} className="label">
+                    {label}
+                  </div>
+                ))}
+              </div>
+*/
