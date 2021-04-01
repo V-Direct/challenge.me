@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="row">
-          <div className="col s3"></div>
+          <div className="col s3 red"></div>
           <div className="col s6">
             {data.map(item => (
               <ChallengeItem 

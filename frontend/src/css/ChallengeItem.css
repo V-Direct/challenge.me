@@ -52,3 +52,31 @@
   color: white;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 1001px) {
+  .challenge-description {
+    font-size: 100%;
+  }
+
+  .challenge-tag {
+    font-size: 110%;
+  }
+
+  .challenge-title {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .challenge-description {
+    font-size: 80%;
+  }
+
+  .challenge-tag {
+    font-size: 90%;
+  }
+
+  .challenge-title {
+    font-size: 90%;
+  }
+}
