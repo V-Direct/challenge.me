@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../images/logo.svg";
 
 async function loginUser(username, password, props) {
   const response = await fetch("http://localhost:3001/user/" + username, {
@@ -32,7 +33,10 @@ async function errorLabel() {
 
 function Login() {
   return (
-    <div>
+    <div className="row">
+      <div className="col s4"></div>
+    <div className="col s4">
+    <img src={Logo} style={{margin:"10%"}}></img>
       <ol>
         <label>Username</label>
       </ol>
@@ -55,6 +59,8 @@ function Login() {
           <Link to="/">Login</Link>
         </button>
       </ol>
+    </div>
+    <div className="col s4"></div>
     </div>
   );
 }

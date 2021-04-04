@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../images/logo.svg";
 
 async function createUser(newUsername, newPassword) {
   const response = await fetch("http://localhost:3001/user/", {
@@ -26,12 +27,14 @@ const onClick = () => {
 function Register() {
   return (
     <div className="row">
-      <form className="col s2">
+      <div className="col s4"></div> 
+      <form className="col s4">
+        <img src={Logo} style={{margin:"10%"}}></img>
         <div className="input-field">
           <input id="inputUsername" placeholder="Username"></input>
         </div>
         <div className="input-field">
-          <input id="inputPassword" placeholder="Password"></input>
+          <input id="inputPassword" placeholder="Password" type="password"></input>
         </div>
          
         <div>
@@ -43,6 +46,7 @@ function Register() {
           </button>
         </div>
       </form>
+      <div className="col s4"></div> 
     </div>
   );
 }
