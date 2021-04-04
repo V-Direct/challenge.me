@@ -11,7 +11,7 @@ async function loginUser(username, password, props) {
   });
   const data = await response.json();
 
-  //await localStorage.setItem("username", username);
+  await localStorage.setItem("username", username);
 
   if (data.password !== password) {
     document.getElementById("errorLabel").innerHTML = "Falsches passwort";

@@ -28,7 +28,7 @@ export default function Profile({
             <div>
             <img className="UserLogo" alt="profile" src={logo}></img>
             </div>
-            <NameLabel className="NameLabel" username="Yatotoast" />
+            <NameLabel className="NameLabel" username={localStorage.getItem("username")} />
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
             <div>Profile <img className="labelIcons" alt="profile" src={logo2}></img></div>} link="login"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel"  content={

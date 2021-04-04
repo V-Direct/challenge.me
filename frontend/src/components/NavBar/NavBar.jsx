@@ -6,7 +6,7 @@ import Search from "../../images/search.png";
 
 function NavBar() {
   const renderRightSide = () => {
-    if (1 === 3) {
+    if (1==3) {
       return (
         <ul className="right">
           <NavBarItem
