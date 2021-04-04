@@ -5,6 +5,9 @@ import Button from "../Button/Button"
 import "../../css/Profile.css"
 import logo from "../../images/user.svg"
 import logo2 from "../../images/user2.svg"
+import logo3 from "../../images/dot.png"
+import logo4 from "../../images/logout.png"
+import logo5 from "../../images/setting.png"
 
 export default function Profile({
     classname
@@ -28,11 +31,12 @@ export default function Profile({
             <NameLabel className="NameLabel" username="Yatotoast" />
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
             <div>Profile <img className="labelIcons" alt="profile" src={logo2}></img></div>} link="login"></ProfileLabel>
-            
-            
-            <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="Settings" link="login"></ProfileLabel>
-            <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="More" link="contact"></ProfileLabel>
-            <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content="Logout"></ProfileLabel>
+            <ProfileLabel divClassname="LabelMarg" className="ProfLabel"  content={
+            <div>Settings <img className="labelIconsSetting" alt="profile" src={logo5}></img></div>} link="login"></ProfileLabel>
+            <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
+            <div>More <img className="labelIconsDot" alt="profile" src={logo3}></img></div>} link="contact"></ProfileLabel>
+            <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
+            <div>Logout <img className="labelIconsLogout" alt="profile" src={logo4}></img></div>}></ProfileLabel>
         </div>
     )
 }
