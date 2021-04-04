@@ -37,9 +37,10 @@ class App extends React.Component {
               labels={item.labels}
             />
         ))}</div>
-          <div className="col s3">
-          <Profile />
-          </div>
+         <div className="col s3">
+         <Profile/>
+         </div>
+
 
 
         </div>

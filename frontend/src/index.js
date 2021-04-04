@@ -11,7 +11,9 @@ import Profile from "./components/SideProfile/Profile";
 const Routing = () => {
   return (
     <BrowserRouter>
+      <div>
       <NavBar />
+      </div>
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/contact" component={Contact} />
