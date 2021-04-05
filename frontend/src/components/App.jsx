@@ -18,9 +18,11 @@ class App extends React.Component {
         this.setState({ data: challenge });
         console.log(this.state);
       });
+ 
   }
 
   render() {
+
     const { data } = this.state;
     return (
       <div className="app">

@@ -4,6 +4,7 @@ import "../../css/NavBar.css";
 import Nav from "../../images/Nav.svg";
 import Search from "../../images/search.png";
 
+
 function NavBar() {
   const renderRightSide = () => {
     if (localStorage.getItem("username")!=null) {
@@ -13,7 +14,7 @@ function NavBar() {
             content={localStorage.getItem("username")}
             link="account"
           />
-          <NavBarItem content="Logout" link="" />
+          <NavBarItem content="Logout" link="logout" />
         </ul>
       );
     } else {

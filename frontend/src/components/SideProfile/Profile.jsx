@@ -36,7 +36,7 @@ export default function Profile({
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
             <div>More <img className="labelIconsDot" alt="profile" src={logo3}></img></div>} link="contact"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
-            <div>Logout <img className="labelIconsLogout" alt="profile" src={logo4}></img></div>}></ProfileLabel>
+            <div>Logout <img className="labelIconsLogout" alt="profile" src={logo4}></img></div>} link="logout"></ProfileLabel>
         </div>
     )
 }

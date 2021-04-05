@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Logo from "../../images/logo.svg";
 
 async function loginUser(username, password, props) {
@@ -36,19 +36,19 @@ function Login() {
     <div className="row">
       <div className="col s4"></div>
     <div className="col s4">
-    <img src={Logo} style={{margin:"10%"}}></img>
+    <img src={Logo} style={{width:"250px"}}></img>
       <ol>
         <label>Username</label>
       </ol>
       <ol>
-        <input id="inputUsername"></input>
+        <input id="inputUsername" style={{color:"white"}} ></input>
       </ol>
       <ol>
         <label>Password</label>
       </ol>
       <ol>
         {" "}
-        <input id="inputPassword" type="password"></input>
+        <input id="inputPassword" type="password" style={{color:"white"}}></input>
       </ol>
       <ol>
         <label id="errorLabel"></label>

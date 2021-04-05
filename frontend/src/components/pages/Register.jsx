@@ -29,12 +29,12 @@ function Register() {
     <div className="row">
       <div className="col s4"></div> 
       <form className="col s4">
-        <img src={Logo} style={{margin:"10%"}}></img>
+        <img src={Logo} style={{width:"250px"}}></img>
         <div className="input-field">
-          <input id="inputUsername" placeholder="Username"></input>
+          <input id="inputUsername" placeholder="Username" style={{color:"white"}}></input>
         </div>
         <div className="input-field">
-          <input id="inputPassword" placeholder="Password" type="password"></input>
+          <input id="inputPassword" placeholder="Password" type="password" style={{color:"white"}}></input>
         </div>
          
         <div>

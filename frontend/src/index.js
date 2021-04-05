@@ -7,6 +7,7 @@ import Register from "./components/pages/Register";
 import Login from "./components/pages/Login";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/SideProfile/Profile";
+import Logout from "./components/Logout/Logout.jsx"
 
 const Routing = () => {
   return (
@@ -20,6 +21,7 @@ const Routing = () => {
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/profile" component={Profile}/>
+        <Route path="/logout" component={Logout}/>
       </Switch>
     </BrowserRouter>
   );
