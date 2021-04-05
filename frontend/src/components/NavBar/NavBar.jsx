@@ -6,7 +6,7 @@ import Search from "../../images/search.png";
 
 function NavBar() {
   const renderRightSide = () => {
-    if (1==3) {
+    if (localStorage.getItem("username")!=null) {
       return (
         <ul className="right">
           <NavBarItem

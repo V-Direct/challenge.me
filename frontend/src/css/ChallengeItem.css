@@ -30,7 +30,7 @@
 }
 
 .labels-container {
-  margin-top: 15px;
+  margin: 15px 15px 15px 0px;
 }
 
 .label {
@@ -38,7 +38,7 @@
   margin-left: 4px;
   margin-right: 10px;
   padding: 3px;
-  background-color: rgb(187, 187, 187);
+  background-color: #c62828;
   border-radius: 6px;
 }
 
