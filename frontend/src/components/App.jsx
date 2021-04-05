@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/App.css";
+import Profile from "./SideProfile/Profile.jsx"
 import ChallengeItem from "./ChallengeItem/ChallengeItem";
 
 class App extends React.Component {
@@ -17,22 +18,36 @@ class App extends React.Component {
         this.setState({ data: challenge });
         console.log(this.state);
       });
+ 
   }
 
   render() {
+    
     const { data } = this.state;
     return (
-      <div className="container">
-        {data.map((item) => (
-          <ChallengeItem
-            key={item._id}
-            title={item.title}
-            tag={item.tag}
-            description={item.description}
-            creator={item.creator}
-            labels={item.labels}
-          />
-        ))}
+      <div className="app">
+        <div className="row">
+          <div className="col s3 red"></div>
+          <div className="col s6">
+            {data.map(item => (
+              <ChallengeItem 
+              key={item._id}
+              title={item.title}
+              tag={item.tag}
+              description={item.description}
+              creator={item.creator}
+              labels={item.labels}
+            />
+        ))}</div>
+         <div className="col s3">
+         <Profile/>
+         </div>
+
+
+
+        </div>
+
+
       </div>
     );
   }

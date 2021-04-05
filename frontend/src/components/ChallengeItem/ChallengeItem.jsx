@@ -12,11 +12,10 @@ export default function ChallengeItem({
 
   return (
       <div className="row">
-        <div className="col s4">
-          <div className="card challenge-container blue darken-3">
+  
+          <div className="card challenge-container grey darken-3">
             <div className="card-content">
               <ChallengeItemHeader title={title} tag={tag} />
-              <div className="challenge-description">{description}</div>
               <div className="labels-container">
                 {labels.map((label) => (
                   <div key={labels.indexOf(label)} className="label">
@@ -24,11 +23,22 @@ export default function ChallengeItem({
                   </div>
                 ))}
               </div>
+              <div className="challenge-description">{description}</div>
+              
             </div>
-          </div>
+ 
         </div>
       </div>
   );
 }
 
 
+/*
+<div className="labels-container">
+                {labels.map((label) => (
+                  <div key={labels.indexOf(label)} className="label">
+                    {label}
+                  </div>
+                ))}
+              </div>
+*/
