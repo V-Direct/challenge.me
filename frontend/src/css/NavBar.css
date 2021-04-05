@@ -1,0 +1,20 @@
+.navitem {
+  margin: 0px 5px 0px 0px;
+
+  display: inline-block;
+}
+
+nav {
+  background-color: #221f1f;
+}
+.NavLogo {
+  margin-top: 50%;
+  height: 20px;
+  width: 30px;
+}
+
+.SearchLogo {
+  margin-top: 20px;
+  height: 22px;
+  width: 20px;
+}

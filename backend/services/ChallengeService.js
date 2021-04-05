@@ -12,6 +12,13 @@ const userService = {
             .catch((err) => {return res.status(400).json("Error: " + err)});
 
     },
+
+    findCreatorChallenges: async (pathVariable, res) =>{
+        await ChallengeModel.find({creator: pathVariable})
+        .then((challenge) => {return res.json(challenge)})
+        .catch((err) => {return res.status(400).json("Error: " + err)});
+    },
+    
     insert: async (challengeObject, res) => {
         
         await ChallengeModel.create(challengeObject)
@@ -32,5 +39,7 @@ const userService = {
         await UserModel.update({title: pathVariable}, updatedField)    
     }
 }
+
+
 
 module.exports = userService;
