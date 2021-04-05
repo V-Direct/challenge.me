@@ -1,6 +1,6 @@
 import React, {useCallback}  from "react";
-import {Redirect, useHistory} from "react-router-dom";
-import Home from "../App.jsx";
+import {Redirect} from "react-router-dom";
+
 
 
 export default function Logout(){

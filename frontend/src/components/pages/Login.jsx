@@ -1,6 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from "react-router-dom";
 import Logo from "../../images/logo.svg";
+import LoginRel from "../Login/LoginRel.jsx";
 
 async function loginUser(username, password, props) {
   const response = await fetch("http://localhost:3001/user/" + username, {
@@ -28,6 +29,7 @@ async function errorLabel() {
     document.getElementById("errorLabel").innerHTML = "Fehler";
   } else {
     await loginUser(username, password);
+    window.location.reload();
   }
 }
 
@@ -56,7 +58,7 @@ function Login() {
       <ol>
         {" "}
         <button onClick={errorLabel}>
-          <Link to="/">Login</Link>
+         <Link to="/">Login</Link>
         </button>
       </ol>
     </div>
