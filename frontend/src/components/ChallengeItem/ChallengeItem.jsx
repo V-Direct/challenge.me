@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import ChallengeItemHeader from "./ChallengeItemHeader";
 import "../../css/ChallengeItem.css";
 
@@ -12,7 +13,7 @@ export default function ChallengeItem({
 
   return (
       <div className="row">
-  
+        <Link to="watchChallenge">
           <div className="card challenge-container grey darken-3">
             <div className="card-content">
               <ChallengeItemHeader title={title} tag={tag} />
@@ -28,6 +29,7 @@ export default function ChallengeItem({
             </div>
  
         </div>
+        </Link>
       </div>
   );
 }

@@ -30,9 +30,9 @@ export default function Profile({
             </div>
             <NameLabel className="NameLabel" username={localStorage.getItem("username")} />
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
-            <div>Profile <img className="labelIcons" alt="profile" src={logo2}></img></div>} link="login"></ProfileLabel>
+            <div>Profile <img className="labelIcons" alt="profile" src={logo2}></img></div>} link="profile"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel"  content={
-            <div>Settings <img className="labelIconsSetting" alt="profile" src={logo5}></img></div>} link="login"></ProfileLabel>
+            <div>Settings <img className="labelIconsSetting" alt="profile" src={logo5}></img></div>} link="settings"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
             <div>More <img className="labelIconsDot" alt="profile" src={logo3}></img></div>} link="contact"></ProfileLabel>
             <ProfileLabel divClassname="LabelMarg" className="ProfLabel" content={
