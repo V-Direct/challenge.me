@@ -12,6 +12,11 @@ router.get("/challenge/:title", async (req, res) => {
   await ChallengeService.findOne(req.params.title, res);
 });
 
+//GET Creators Challenges
+router.get("/challenge/creator/:creator", async (req, res) => {
+  await ChallengeService.findCreatorChallenges(req.params.creator, res);
+});
+
 //POST add Challenge
 router.post("/challenge", async (req, res) => {
   const challenge = req.body;

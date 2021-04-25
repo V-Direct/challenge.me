@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema({
   email: {
     type: String,
     trim: true,
-    required: true
+    required: false
   },
   accepted_challenges: {
     type: Array,

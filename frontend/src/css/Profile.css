@@ -1,0 +1,88 @@
+.Profile {
+  text-align: center;
+  margin: 0.5% 0% 2% 12%;
+  border-radius: 15px;
+  background-color: #c62828;
+  color: white;
+  height: fit-content;
+  display: flexbox;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.SettingsButton {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 12pt;
+  text-align: center;
+  background-color: #c62828;
+  color: black;
+  border-style: none;
+  border-radius: 8px;
+  width: 90%;
+}
+.UserLogo {
+  margin-top: 10%;
+  height: 40%;
+  width: 40%;
+}
+
+.LabelMarg {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.ProfLabel {
+  font-size: 20pt;
+  font-weight: 700;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.NameLabel {
+  font-size: 20pt;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+  border-bottom: solid;
+  border-color: rgb(182, 195, 215);
+}
+
+.labelIcons {
+  height: 20px;
+  width: 20px;
+}
+
+.labelIconsSetting {
+  height: 30px;
+  width: 30px;
+}
+
+.labelIconsDot {
+  height: 10px;
+  width: 30px;
+}
+
+.labelIconsLogout {
+  height: 20px;
+  width: 30px;
+}
+
+@media screen and (max-width: 601px) {
+  .NameLabel {
+    font-size: 12pt;
+  }
+
+  .ProfLabel {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .NameLabel {
+    font-size: 9pt;
+  }
+
+  .ProfLabel {
+    font-size: 9pt;
+  }
+}
