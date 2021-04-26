@@ -90,5 +90,24 @@
 
 .createlabelscontainer {
   display: flex;
-  flex-direction: row;
+}
+
+.labelsshow {
+  flex-wrap: wrap;
+  /* flex: 2; */
+}
+
+.labelsinput {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* flex: 1; */
+}
+
+.labelsinputbutton {
+  /* flex: 0; */
+}
+
+.label-btn {
+  font-size: 19;
+  font-weight: bold;
 }
