@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "../css/App.css";
 import Profile from "./SideProfile/Profile.jsx"
 import ChallengeItem from "./ChallengeItem/ChallengeItem";
@@ -27,9 +28,14 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="row">
-          <div className="col s3 red"></div>
+          <div className="col s3">
+            <div className="LabelsTitle">Labels</div>
+          {data.map(item => (
+              item.labels.map(el => (<div className="Labels2"><Link to={"/labelChallenges/"+ el}><div className="Labels" id="label">{el}</div></Link></div>))
+        ))}</div>
           <div className="col s6">
             {data.map(item => (
+              <div>
               <ChallengeItem 
               key={item._id}
               title={item.title}
@@ -37,7 +43,9 @@ class App extends React.Component {
               description={item.description}
               creator={item.creator}
               labels={item.labels}
+              
             />
+            </div>
         ))}</div>
          <div className="col s3">
          <Profile/>
