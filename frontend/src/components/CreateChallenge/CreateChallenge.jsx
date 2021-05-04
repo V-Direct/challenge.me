@@ -16,29 +16,30 @@ export default class CreateChallenge extends React.Component {
 
   onClick = async () => {
     console.log(this.labels);
-
-    // await fetch("http://localhost:3001/challenge/", {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: {
-    //     title: document.getElementById("challange-create-title").value,
-    //     description: document.getElementById("challange-create-description")
-    //       .value,
-    //     labels: this.labels,
-    //     creator: localStorage.getItem("username"),
-    //   },
-    // });
-
-    console.log({
-      title: document.getElementById("challenge-create-title").value,
-      description: document.getElementById("challenge-create-description")
-        .value,
-      labels: this.labels,
-      creator: localStorage.getItem("username"),
+    const title = document.getElementById("challenge-create-title").value;
+    const description = document.getElementById("challenge-create-description");
+    console.log("hier bin ich");
+    await fetch("http://localhost:3001/challenge/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        mode: "cors",
+      },
+      body: {
+        title: title,
+        description: description,
+        labels: this.labels,
+        creator: localStorage.getItem("username"),
+      },
     });
+
+    // console.log({
+    //   title: document.getElementById("challenge-create-title").value,
+    //   description: document.getElementById("challenge-create-description")
+    //     .value,
+    //   labels: this.labels,
+    //   creator: localStorage.getItem("username"),
+    // });
   };
 
   render() {

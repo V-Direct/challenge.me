@@ -1,4 +1,5 @@
 require("dotenv").config();
+const cors = require("cors");
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
@@ -17,12 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-let allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', "*");
-  res.header('Access-Control-Allow-Headers', "*");
-  next();
-}
-app.use(allowCrossDomain);
+app.use(cors());
 
 app.use("/", routes);
 app.use("/", userroutes);
