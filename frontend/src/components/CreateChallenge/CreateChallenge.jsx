@@ -17,20 +17,30 @@ export default class CreateChallenge extends React.Component {
   onClick = async () => {
     console.log(this.labels);
     const title = document.getElementById("challenge-create-title").value;
-    const description = document.getElementById("challenge-create-description");
-    console.log("hier bin ich");
+    const description = document.getElementById("challenge-create-description")
+      .value;
+    console.log(
+      JSON.stringify({
+        title: title,
+        description: description,
+        labels: this.labels,
+        start_date: Date.now(),
+        creator: localStorage.getItem("username"),
+      })
+    );
+
     await fetch("http://localhost:3001/challenge/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        mode: "cors",
       },
-      body: {
+      body: JSON.stringify({
         title: title,
         description: description,
         labels: this.labels,
+        start_date: Date.now(),
         creator: localStorage.getItem("username"),
-      },
+      }),
     });
 
     // console.log({

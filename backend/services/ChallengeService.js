@@ -34,12 +34,9 @@ const userService = {
     const tagNumber = String(Math.floor(Math.random() * 1000) + 1);
     const tag = "#" + tagNumber.padStart(4, "0");
 
-    const startDate = new Date(Date.now()).toISOString();
-
     challengeObject = {
       ...challengeObject,
       tag: tag,
-      startDate: startDate,
     };
 
     await ChallengeModel.create(challengeObject)
