@@ -3,13 +3,15 @@ import {Link} from "react-router-dom";
 import "../css/App.css";
 import Profile from "./SideProfile/Profile.jsx"
 import ChallengeItem from "./ChallengeItem/ChallengeItem";
+import CreateChallenge from './CreateChallenge/CreateChallenge';
 
-class App extends React.Component {
-  constructor() {
-    super();
+
+class App extends React.Component{
+  constructor(){
+    super()
     this.state = {
-      data: [],
-    };
+      data: []
+    }
   }
 
   componentDidMount() {
@@ -28,6 +30,15 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="row">
+
+          <div className="col s3"></div>
+          <div className="col s6">
+            <div className="row">
+              <CreateChallenge />
+            </div>
+            <div className="row">
+              {data.map(item => (
+
           <div className="col s3">
             <div className="LabelsTitle">Labels</div>
           {data.map(item => (
@@ -36,6 +47,7 @@ class App extends React.Component {
           <div className="col s6">
             {data.map(item => (
               <div>
+
               <ChallengeItem 
               key={item._id}
               title={item.title}
@@ -43,10 +55,11 @@ class App extends React.Component {
               description={item.description}
               creator={item.creator}
               labels={item.labels}
-              
+
             />
-            </div>
         ))}</div>
+            </div>
+
          <div className="col s3">
          <Profile/>
          </div>
@@ -57,9 +70,10 @@ class App extends React.Component {
 
 
       </div>
-    );
+    )
   }
 }
+
 
 export default App;
 

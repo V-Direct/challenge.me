@@ -9,7 +9,7 @@ const ChallengeSchema = new mongoose.Schema({
   tag: {
     type: String,
     trim: true,
-    required: true
+    required: true,
   },
   description: {
     type: String,
@@ -17,16 +17,19 @@ const ChallengeSchema = new mongoose.Schema({
     required: true,
   },
   start_date: {
-      type: Date,
-      required: true
+    type: Date,
+    required: true,
   },
   end_date: {
-      type: Date,
-      required: false
+    type: Date,
+    required: false,
   },
   creator: {
-      type: String
-  }
+    type: String,
+  },
+  labels: {
+    type: Array,
+  },
 });
 
 const ChallengeModel = mongoose.model("Challenge", ChallengeSchema);

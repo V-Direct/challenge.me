@@ -12,13 +12,16 @@ export default function ChallengeItem({
 }) {
 
   return (
+
       <div className="row">
         <Link to="watchChallenge">
+
           <div className="card challenge-container grey darken-3">
             <div className="card-content">
               <ChallengeItemHeader title={title} tag={tag} />
               <div className="labels-container">
-                {labels.map((label) => (
+                {
+                labels === undefined ? console.log("no label") : labels.map((label) => (
                   <div key={labels.indexOf(label)} className="label">
                     {label}
                   </div>
@@ -29,8 +32,10 @@ export default function ChallengeItem({
             </div>
  
         </div>
+
         </Link>
       </div>
+
   );
 }
 

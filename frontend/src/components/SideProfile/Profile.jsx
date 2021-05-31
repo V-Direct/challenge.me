@@ -1,27 +1,16 @@
-import React from "react"
-import ProfileLabel from "../Labels/ProfileLabel.jsx"
-import NameLabel from "../Labels/NameLabel.jsx"
-import Button from "../Button/Button"
-import "../../css/Profile.css"
-import logo from "../../images/user.svg"
-import logo2 from "../../images/user2.svg"
-import logo3 from "../../images/dot.png"
-import logo4 from "../../images/logout.png"
-import logo5 from "../../images/setting.png"
+
+import React from "react";
+import ProfileLabel from "../Labels/ProfileLabel.jsx";
+import NameLabel from "../Labels/NameLabel.jsx";
+import "../../css/Profile.css";
+import logo from "../../images/user.svg";
+import logo2 from "../../images/user2.svg";
+import logo3 from "../../images/dot.png";
+import logo4 from "../../images/logout.png";
+import logo5 from "../../images/setting.png";
 
 export default function Profile({
-    classname
-   /*
-               <div>
-            <Button className="SettingsButton" buttonText="Profile"></Button>
-            </div>
-            <div>
-            <Button className="SettingsButton" buttonText="Challenges"></Button>
-            </div>
-            <div>
-            <Button className="SettingsButton" buttonText="Settings"></Button>
-            </div>
-   */ 
+  classname,
 }) {
     return(
         <div className={classname+" Profile"}>
@@ -40,3 +29,4 @@ export default function Profile({
         </div>
     )
 }
+

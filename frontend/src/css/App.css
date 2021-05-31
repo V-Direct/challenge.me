@@ -1,5 +1,7 @@
 .app {
   background-color: rgb(34, 31, 31);
+
+
 }
 
 .LabelsTitle {
@@ -22,4 +24,5 @@
   display: flex;
   flex-direction: row;
   margin: 10px;
+
 }
