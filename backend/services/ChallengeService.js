@@ -20,6 +20,7 @@ const userService = {
       });
   },
 
+
   findCreatorChallenges: async (pathVariable, res) => {
     await ChallengeModel.find({ creator: pathVariable })
       .then((challenge) => {
@@ -29,6 +30,7 @@ const userService = {
         return res.status(400).json("Error: " + err);
       });
   },
+
 
   insert: async (challengeObject, res) => {
     const tagNumber = String(Math.floor(Math.random() * 1000) + 1);

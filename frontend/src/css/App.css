@@ -1,3 +1,28 @@
 .app {
   background-color: rgb(34, 31, 31);
+
+
+}
+
+.LabelsTitle {
+  color: white;
+  font-size: 150%;
+  margin: 15px 15px 15px 0px;
+}
+
+.Labels {
+  color: white;
+  background-color: #424242;
+  display: inline;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.Labels2 {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+
 }
