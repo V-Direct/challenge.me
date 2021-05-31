@@ -42,14 +42,6 @@ export default class CreateChallenge extends React.Component {
         creator: localStorage.getItem("username"),
       }),
     });
-
-    // console.log({
-    //   title: document.getElementById("challenge-create-title").value,
-    //   description: document.getElementById("challenge-create-description")
-    //     .value,
-    //   labels: this.labels,
-    //   creator: localStorage.getItem("username"),
-    // });
   };
 
   render() {
