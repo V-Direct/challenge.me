@@ -7,21 +7,23 @@ import Register from "./components/pages/Register";
 import Login from "./components/pages/Login";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/SideProfile/Profile";
-import Logout from "./components/Logout/Logout.jsx"
+import Logout from "./components/Logout/Logout.jsx";
+import ChallengeView from "./components/ChallengeView/ChallengeView";
 
 const Routing = () => {
   return (
     <BrowserRouter>
       <div>
-      <NavBar />
+        <NavBar />
       </div>
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/contact" component={Contact} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
-        <Route path="/profile" component={Profile}/>
-        <Route path="/logout" component={Logout}/>
+        <Route path="/profile" component={Profile} />
+        <Route path="/logout" component={Logout} />
+        <Route path="/watchChallenge" component={ChallengeView} />
       </Switch>
     </BrowserRouter>
   );
