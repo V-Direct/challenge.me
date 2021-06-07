@@ -82,7 +82,6 @@
   }
 }
 
-
 .description-textarea {
   margin-top: 2%;
   height: 100px;
@@ -98,18 +97,7 @@
   /* flex: 2; */
 }
 
-.labelsinput {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* flex: 1; */
-}
-
-.labelsinputbutton {
-  /* flex: 0; */
-}
-
 .label-btn {
   font-size: 19;
   font-weight: bold;
 }
-

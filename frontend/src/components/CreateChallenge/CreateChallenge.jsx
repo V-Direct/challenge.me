@@ -3,6 +3,7 @@ import ChallengeItemHeader from "../ChallengeItem/ChallengeItemHeader";
 import CreateChallengeLabels from "./CreateChallengeLabels";
 import "../../css/ChallengeItem.css";
 import Button from "../Button/Button";
+import MapContainer from "./MapContainer";
 
 export default class CreateChallenge extends React.Component {
   constructor() {
@@ -44,25 +45,38 @@ export default class CreateChallenge extends React.Component {
     });
   };
 
+  // Initialize and add the map
+
   render() {
     return (
       <div className="card grey darken-3">
         <div className="card-content">
-          <ChallengeItemHeader title="Create Challenge" />
-          <input
-            placeholder="Title"
-            type="text"
-            id="challenge-create-title"
-          ></input>
-          <textarea
-            placeholder="Description"
-            className="description-textarea"
-            id="challenge-create-description"
-          ></textarea>
+          <div style={{ marginBottom: 30 + "%" }}>
+            <ChallengeItemHeader title="Create Challenge" />
+            <input
+              placeholder="Title"
+              type="text"
+              id="challenge-create-title"
+            ></input>
+            <textarea
+              placeholder="Description"
+              className="description-textarea"
+              id="challenge-create-description"
+            ></textarea>
 
-          <CreateChallengeLabels labelData={this.getLabelData} />
-
-          <Button buttonText="Create Challange" onClick={this.onClick} />
+            <div className="col s6">
+              <CreateChallengeLabels labelData={this.getLabelData} />
+              <button
+                className="waves-effect waves-light btn red"
+                onClick={this.onClick}
+              >
+                Create Challenge
+              </button>
+            </div>
+            <div className="col s6">
+              <MapContainer />
+            </div>
+          </div>
         </div>
       </div>
     );
