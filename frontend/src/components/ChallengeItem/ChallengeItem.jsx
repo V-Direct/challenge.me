@@ -14,7 +14,8 @@ export default function ChallengeItem({
   return (
 
       <div className="row">
-        <Link to="watchChallenge">
+        <Link to={{pathname:"/watchChallenge", challenge:{title: title,
+        tag: tag, description: description, labels:labels}}} >
 
           <div className="card challenge-container grey darken-3">
             <div className="card-content">
