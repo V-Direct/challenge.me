@@ -17,7 +17,7 @@ export default class ChallengeView extends React.Component {
             <td>{this.props.location.challenge.title}</td>
             <td>{this.props.location.challenge.tag}</td>
             <td>{this.props.location.challenge.description}</td>
-          </tr>
+          </tr>test
         </tbody>
       </table>
     </div>;
